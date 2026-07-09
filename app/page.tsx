@@ -5,6 +5,8 @@ import Services from "@/components/services/Services";
 import Projects from "@/components/projects/Projects";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/layout/Footer";
+import AnimatedShowcase from "@/components/home/AnimatedShowcase";
+
 
 export default function PortfolioPage() {
   return (
@@ -20,6 +22,7 @@ export default function PortfolioPage() {
       <Navbar />
       <Hero />
       <Profile />
+      <AnimatedShowcase />
       <Services />
       <Projects />
       <Contact />
