@@ -4,8 +4,8 @@ export const projects = [
     subtitle: "Secure savings circle platform",
     desc: "A role-based fintech-style platform focused on trust, transparency, contribution tracking, and structured payout workflows.",
     tech: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
-    live: "#",
-    code: "#",
+    live: "https://projectcirclesave-qqtt-arun96666ar-6119s-projects.vercel.app?_vercel_share=IuBROzP7IOGtP9E0X7ToaGQusztEoYhc",
+    code: "https://github.com/arunpasala/projectcirclesave",
   },
   {
     title: "AI & Project Management",
