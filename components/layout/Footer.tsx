@@ -3,8 +3,7 @@ export default function Footer() {
     <footer className="border-t border-white/10 px-6 py-8">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-4 text-sm text-slate-400 sm:flex-row sm:items-center">
         <p>
-          © 2026 Bala Arun Pasala Portfolio. Crafted with Next.js and
-          glassmorphism-inspired design.
+          © 2026 Bala Arun Pasala. All rights reserved. 
         </p>
 
         <div className="flex items-center gap-5">
