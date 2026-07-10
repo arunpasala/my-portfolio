@@ -6,6 +6,7 @@ import Projects from "@/components/projects/Projects";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/layout/Footer";
 import AnimatedShowcase from "@/components/home/AnimatedShowcase";
+import Blogs from "@/components/blogs/Blogs";
 
 
 export default function PortfolioPage() {
@@ -25,6 +26,7 @@ export default function PortfolioPage() {
       <AnimatedShowcase />
       <Services />
       <Projects />
+      <Blogs />
       <Contact />
       <Footer />
     </main>

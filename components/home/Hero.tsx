@@ -122,10 +122,8 @@ export default function Hero() {
               filter: "blur(10px)",
             }}
             transition={{
-              exit: {
-                duration: 0.7,
-                ease: [0.22, 1, 0.36, 1],
-              },
+              duration: 0.7,
+              ease: [0.22, 1, 0.36, 1],
             }}
             className="fixed inset-0 z-[9999] flex min-h-screen items-center justify-center overflow-hidden bg-slate-950 px-6"
           >
