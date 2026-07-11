@@ -191,3 +191,91 @@ body {
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.08);
 }
+
+/* contact form */
+.contact-gradient-text {
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #67e8f9,
+    #60a5fa,
+    #8b5cf6,
+    #d946ef,
+    #ffffff
+  );
+
+  background-size: 300% 100%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: contact-gradient-flow 7s linear infinite;
+
+  filter:
+    drop-shadow(0 0 12px rgba(34, 211, 238, 0.15))
+    drop-shadow(0 0 20px rgba(139, 92, 246, 0.12));
+}
+
+@keyframes contact-gradient-flow {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 300% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-gradient-text {
+    animation: none;
+    background-position: 50% 50%;
+  }
+}
+
+/* services section */
+.services-gradient-text {
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #67e8f9,
+    #60a5fa,
+    #8b5cf6,
+    #d946ef,
+    #ffffff
+  );
+
+  background-size: 300% 100%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: services-gradient-flow 7s linear infinite;
+
+  filter:
+    drop-shadow(0 0 12px rgba(34, 211, 238, 0.14))
+    drop-shadow(0 0 20px rgba(139, 92, 246, 0.12));
+}
+
+@keyframes services-gradient-flow {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 300% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-gradient-text {
+    animation: none;
+    background-position: 50% 50%;
+  }
+}

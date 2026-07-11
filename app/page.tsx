@@ -10,6 +10,7 @@ import Blogs from "@/components/blogs/Blogs";
 import FeedbackWall from "@/components/sections/FeedbackWall";
 import GitHubContributions from "@/components/sections/GitHubContributions";
 import Testimonials from "@/components/sections/Testimonials";
+import WorkExperience from "@/components/profile/WorkExperience";
 
 export default function PortfolioPage() {
   return (
