@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
 import { ContactDrawerProvider } from "@/components/contact/ContactDrawerProvider";
 
 const geistSans = Geist({
@@ -16,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Bala Arun Pasala",
   description: "Created by Bala Arun Pasala",
-}
+};
 
 export default function RootLayout({
   children,
@@ -28,12 +29,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        
+      <body className="flex min-h-full flex-col">
         <ContactDrawerProvider>
           {children}
         </ContactDrawerProvider>
-        
       </body>
     </html>
   );
