@@ -8,6 +8,7 @@ import Footer from "@/components/layout/Footer";
 import AnimatedShowcase from "@/components/home/AnimatedShowcase";
 import Blogs from "@/components/blogs/Blogs";
 import FeedbackWall from "@/components/sections/FeedbackWall";
+import GitHubContributions from "@/components/sections/GitHubContributions";
 
 export default function PortfolioPage() {
   return (
@@ -24,13 +25,16 @@ export default function PortfolioPage() {
       <Hero />
       <Profile />
       <AnimatedShowcase />
+
       <Services />
       <Projects />
 
       <Blogs />
-      <Contact />
+      
+      <GitHubContributions />
        {/* Visitor feedback wall */}
         <FeedbackWall />
+        <Contact />
       <Footer />
     </main>
   );
