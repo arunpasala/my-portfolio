@@ -109,3 +109,57 @@ body {
   }
 
 }
+
+/* testimonials section */
+.testimonial-gradient {
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    #8b5cf6,
+    #c026d3,
+    #ec4899,
+    #f43f5e,
+    #8b5cf6
+  );
+
+  background-size: 300% 100%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: testimonial-gradient-flow 7s linear infinite;
+}
+
+@keyframes testimonial-gradient-flow {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: 300% center;
+  }
+}
+
+.testimonial-input {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.035);
+  padding: 0.85rem 1rem;
+  color: white;
+  outline: none;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.testimonial-input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.testimonial-input:focus {
+  border-color: rgba(192, 132, 252, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+}

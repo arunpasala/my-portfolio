@@ -9,6 +9,7 @@ import AnimatedShowcase from "@/components/home/AnimatedShowcase";
 import Blogs from "@/components/blogs/Blogs";
 import FeedbackWall from "@/components/sections/FeedbackWall";
 import GitHubContributions from "@/components/sections/GitHubContributions";
+import Testimonials from "@/components/sections/Testimonials";
 
 export default function PortfolioPage() {
   return (
@@ -34,6 +35,7 @@ export default function PortfolioPage() {
       <GitHubContributions />
        {/* Visitor feedback wall */}
         <FeedbackWall />
+        <Testimonials />
         <Contact />
       <Footer />
     </main>

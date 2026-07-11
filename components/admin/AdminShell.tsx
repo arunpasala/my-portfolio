@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { MessageSquareQuote,} from "lucide-react";
+
 import {
   BookOpenText,
   ExternalLink,
@@ -37,6 +39,11 @@ const adminLinks = [
     label: "Daily Quotes",
     icon: Quote,
   },
+  {
+  href: "/admin/testimonials",
+  label: "Testimonials",
+  icon: MessageSquareQuote,
+},
 ];
 
 function getAdminName(
