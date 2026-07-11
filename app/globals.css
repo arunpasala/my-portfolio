@@ -111,36 +111,61 @@ body {
 }
 
 /* testimonials section */
+/* ======================================================
+   TESTIMONIAL HEADING GRADIENT
+====================================================== */
+
 .testimonial-gradient {
   display: inline-block;
 
   background: linear-gradient(
     90deg,
-    #8b5cf6,
-    #c026d3,
-    #ec4899,
-    #f43f5e,
-    #8b5cf6
+    #7dd3fc 0%,
+    #60a5fa 14%,
+    #6366f1 28%,
+    #8b5cf6 42%,
+    #c026d3 58%,
+    #ec4899 72%,
+    #f43f5e 86%,
+    #7dd3fc 100%
   );
 
-  background-size: 300% 100%;
+  background-size: 350% 100%;
+  background-position: 0% 50%;
+
+  color: transparent;
 
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   animation: testimonial-gradient-flow 7s linear infinite;
+
+  filter:
+    drop-shadow(0 0 10px rgba(139, 92, 246, 0.22))
+    drop-shadow(0 0 22px rgba(236, 72, 153, 0.16));
 }
 
 @keyframes testimonial-gradient-flow {
   from {
-    background-position: 0% center;
+    background-position: 0% 50%;
   }
 
   to {
-    background-position: 300% center;
+    background-position: 350% 50%;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-gradient {
+    animation: none;
+    background-position: 50% 50%;
+  }
+}
+
+/* ======================================================
+   TESTIMONIAL FORM INPUTS
+====================================================== */
 
 .testimonial-input {
   width: 100%;
@@ -150,9 +175,11 @@ body {
   padding: 0.85rem 1rem;
   color: white;
   outline: none;
+
   transition:
     border-color 180ms ease,
-    background-color 180ms ease;
+    background-color 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .testimonial-input::placeholder {
@@ -160,6 +187,7 @@ body {
 }
 
 .testimonial-input:focus {
-  border-color: rgba(192, 132, 252, 0.5);
+  border-color: rgba(192, 132, 252, 0.55);
   background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.08);
 }

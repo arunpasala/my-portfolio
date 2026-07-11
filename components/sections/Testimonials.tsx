@@ -284,13 +284,13 @@ export default function Testimonials() {
           </p>
 
           <h2 className="mt-6 text-5xl font-light tracking-tight sm:text-6xl lg:text-7xl">
-            <span className="font-serif text-white">
-              Word on the street
-            </span>{" "}
-            <span className="testimonial-gradient font-serif italic">
-              about me
-            </span>
-          </h2>
+  <span className="font-serif text-white">
+    Word on the street
+  </span>{" "}
+  <span className="testimonial-animated-gradient font-serif italic">
+    about me
+  </span>
+</h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/45 sm:text-base">
             Feedback from people who have worked with
@@ -352,23 +352,22 @@ export default function Testimonials() {
                         delay: index * 0.1,
                         duration: 0.6,
                       }}
-                      className={`flex min-h-[430px] flex-col rounded-[1.75rem] border p-7 sm:p-8 ${
+                      className={`group flex min-h-[350px] flex-col rounded-[1.5rem] border p-6 sm:min-h-[370px] sm:p-7 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.35)] ${
                         cardStyles[
                           testimonial.card_color
                         ] ?? cardStyles.purple
                       }`}
                     >
-                      <Quote className="h-8 w-8 text-white/20" />
-
-                      <h3 className="mt-5 text-xl font-semibold leading-snug sm:text-2xl">
+                   <Quote className="h-7 w-7 text-white/20 group-hover:text-white/40 transition" />
+                      <h3 className="mt-4 text-lg font-semibold leading-tight sm:text-xl">
                         {testimonial.title}
                       </h3>
 
-                      <p className="mt-5 leading-8 text-white/65">
+                      <p className="mt-4 text-[15px] leading-7 text-white/65">
                         {testimonial.message}
                       </p>
 
-                      <div className="mt-auto flex items-center gap-3 pt-8">
+                      <div className="mt-auto flex items-center gap-3 pt-6">
                         {testimonial.avatar_url ? (
                           <img
                             src={
@@ -376,10 +375,10 @@ export default function Testimonials() {
                             }
                             alt={testimonial.name}
                             referrerPolicy="no-referrer"
-                            className="h-12 w-12 rounded-full border border-white/15 object-cover"
+                            className="h-11 w-11 rounded-full border border-white/15 object-cover"
                           />
                         ) : (
-                          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/10 text-sm font-bold">
+                          <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/10 text-sm font-bold">
                             {getInitials(
                               testimonial.name
                             )}
@@ -387,11 +386,11 @@ export default function Testimonials() {
                         )}
 
                         <div className="min-w-0">
-                          <p className="truncate font-semibold">
+                          <p className="truncate text-[15px] font-semibold">
                             {testimonial.name}
                           </p>
 
-                          <p className="truncate text-sm text-white/45">
+                          <p className="truncate text-xs text-white/45">
                             {[
                               testimonial.role,
                               testimonial.company,

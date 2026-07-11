@@ -318,7 +318,7 @@ export default function ContactDrawer({
 
                 <div className="mt-3 grid gap-3 md:grid-cols-2">
                   <motion.a
-                    href="https://cal.com/YOUR-CAL-USERNAME"
+                    href="https://cal.com/bala-arun-pasala-rumq6s"
                     target="_blank"
                     rel="noreferrer"
                     whileHover={{
@@ -358,7 +358,7 @@ export default function ContactDrawer({
                   </motion.a>
 
                   <motion.a
-                    href="mailto:your-email@gmail.com"
+                    href="mailto:balaarunpasala.dev@gmail.com"
                     whileHover={{
                       y: -5,
                     }}
@@ -388,14 +388,14 @@ export default function ContactDrawer({
                     </h3>
 
                     <p className="relative mt-1 break-all text-sm text-slate-500">
-                      your-email@gmail.com
+                      balaarunpasala.dev@gmail.com
                     </p>
                   </motion.a>
                 </div>
 
                 <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3">
                   <SocialLink
-                    href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+                    href="https://www.linkedin.com/in/balaarunpasala/"
                     label="LinkedIn"
                     icon={<LinkedInIcon />}
                   />
@@ -407,7 +407,7 @@ export default function ContactDrawer({
                   />
 
                   <SocialLink
-                    href="https://github.com/YOUR-GITHUB"
+                    href="https://github.com/arunpasala"
                     label="GitHub"
                     icon={<GitHubIcon />}
                   />
