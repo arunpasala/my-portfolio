@@ -279,3 +279,48 @@ body {
     background-position: 50% 50%;
   }
 }
+
+/* work experience */
+.work-gradient-text {
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    #67e8f9,
+    #60a5fa,
+    #818cf8,
+    #a78bfa,
+    #e879f9,
+    #67e8f9
+  );
+
+  background-size: 320% 100%;
+  background-position: 0% 50%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: work-gradient-flow 7s linear infinite;
+
+  filter:
+    drop-shadow(0 0 10px rgba(34, 211, 238, 0.16))
+    drop-shadow(0 0 22px rgba(139, 92, 246, 0.14));
+}
+
+@keyframes work-gradient-flow {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 320% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-gradient-text {
+    animation: none;
+    background-position: 50% 50%;
+  }
+}
