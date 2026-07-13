@@ -1,6 +1,5 @@
 "use client";
 
-import ContactDrawer from "@/components/contact/ContactDrawer";
 import {
   createContext,
   ReactNode,
@@ -10,14 +9,16 @@ import {
   useState,
 } from "react";
 
-type ContactDrawerContextType = {
-  isContactDrawerOpen: boolean;
+import ContactDrawer from "./ContactDrawer";
+
+type ContactDrawerContextValue = {
+  isOpen: boolean;
   openContactDrawer: () => void;
   closeContactDrawer: () => void;
 };
 
 const ContactDrawerContext =
-  createContext<ContactDrawerContextType | null>(null);
+  createContext<ContactDrawerContextValue | null>(null);
 
 type ContactDrawerProviderProps = {
   children: ReactNode;
@@ -26,36 +27,35 @@ type ContactDrawerProviderProps = {
 export function ContactDrawerProvider({
   children,
 }: ContactDrawerProviderProps) {
-  const [isContactDrawerOpen, setIsContactDrawerOpen] =
-    useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const openContactDrawer = useCallback(() => {
-    setIsContactDrawerOpen(true);
+    setIsOpen(true);
   }, []);
 
   const closeContactDrawer = useCallback(() => {
-    setIsContactDrawerOpen(false);
+    setIsOpen(false);
   }, []);
 
-  const contextValue = useMemo(
+  const value = useMemo(
     () => ({
-      isContactDrawerOpen,
+      isOpen,
       openContactDrawer,
       closeContactDrawer,
     }),
     [
-      isContactDrawerOpen,
+      isOpen,
       openContactDrawer,
       closeContactDrawer,
     ],
   );
 
   return (
-    <ContactDrawerContext.Provider value={contextValue}>
+    <ContactDrawerContext.Provider value={value}>
       {children}
 
       <ContactDrawer
-        isOpen={isContactDrawerOpen}
+        isOpen={isOpen}
         onClose={closeContactDrawer}
       />
     </ContactDrawerContext.Provider>
@@ -63,11 +63,13 @@ export function ContactDrawerProvider({
 }
 
 export function useContactDrawer() {
-  const context = useContext(ContactDrawerContext);
+  const context = useContext(
+    ContactDrawerContext,
+  );
 
   if (!context) {
     throw new Error(
-      "useContactDrawer must be used inside ContactDrawerProvider",
+      "useContactDrawer must be used inside ContactDrawerProvider.",
     );
   }
 
