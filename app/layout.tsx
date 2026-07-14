@@ -7,6 +7,7 @@ import {
 import "./globals.css";
 
 import { ContactDrawerProvider } from "@/components/contact/ContactDrawerProvider";
+import ThemeProvider from "@/components/theme/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +21,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Bala Arun Pasala",
-  description: "Created by Bala Arun Pasala",
+  description:
+    "Full-Stack Software Engineer portfolio",
 };
 
 export default function RootLayout({
@@ -35,9 +37,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
-        <ContactDrawerProvider>
-          {children}
-        </ContactDrawerProvider>
+        <ThemeProvider>
+          <ContactDrawerProvider>
+            {children}
+          </ContactDrawerProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

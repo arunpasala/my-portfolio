@@ -146,7 +146,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-[#050611] px-5 py-24 text-white sm:px-8 sm:py-28 lg:px-10"
+      className="relative overflow-hidden bg-slate-50 text-slate-950 dark:bg-[#050611] dark:text-white px-5 py-24  sm:px-8 sm:py-28 lg:px-10"
     >
       {/* ======================================================
           BACKGROUND

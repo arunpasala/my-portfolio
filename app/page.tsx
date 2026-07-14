@@ -24,6 +24,7 @@ export default function PortfolioPage() {
       </div>
 
       <Navbar />
+      
       <Hero />
       <Profile />
       <AnimatedShowcase />

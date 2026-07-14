@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { navItems } from "@/data/navigation";
 import { useContactDrawer } from "@/components/contact/ContactDrawerProvider";
+import ThemeToggle from "@/components/theme/ThemeToggle";
 
 // ======================================================
 // NAVBAR COMPONENT
@@ -291,12 +292,15 @@ export default function Navbar() {
               })}
             </motion.nav>
           </motion.div>
-
+        
+  
           {/* ==================================================
               RIGHT SECTION
               Separate Let's Connect button
           =================================================== */}
           <motion.div layout className="hidden justify-end lg:flex">
+            <ThemeToggle />
+            &nbsp;&nbsp;
             <motion.button
               type="button"
               onClick={handleContactClick}

@@ -59,7 +59,7 @@ ${form.message}`
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#050611] px-5 py-24 text-white sm:px-8"
+      className="relative overflow-hidden bg-slate-50 text-slate-950 dark:bg-[#050611] dark:text-white px-5 py-24  sm:px-8"
     >
       {/* Background effects */}
       <div className="pointer-events-none absolute inset-0">
