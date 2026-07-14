@@ -413,7 +413,7 @@ export default function Hero() {
                 </a>
 
                 <a
-                  href="/Bala-Arun-Pasala-Resume.pdf"
+                  href="/resume/Bala-Arun-Pasala-Resume.pdf"
                   download
                   className="inline-flex items-center gap-2 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-5 py-3 text-sm font-semibold text-cyan-200 transition duration-300 hover:bg-cyan-400/20"
                 >
@@ -535,9 +535,12 @@ export default function Hero() {
 
                   <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-400/15 to-blue-500/10 p-5">
                     <p className="text-sm leading-7 text-slate-300">
-                      A strong portfolio should show your value clearly, guide
-                      recruiters quickly, and make your work memorable.
-                    </p>
+  I build scalable full-stack applications that combine clean design,
+  robust backend architecture, and seamless user experiences. Whether
+  developing modern web platforms, REST APIs, or AI-powered solutions,
+  my goal is to create software that is reliable, maintainable, and
+  impactful.
+</p>
                   </div>
                 </div>
               </div>

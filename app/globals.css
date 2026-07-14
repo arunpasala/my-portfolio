@@ -324,3 +324,92 @@ body {
     background-position: 50% 50%;
   }
 }
+/* Animatedshowcase */
+.showcase-gradient-text {
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    #67e8f9,
+    #60a5fa,
+    #818cf8,
+    #c084fc,
+    #f472b6,
+    #67e8f9
+  );
+
+  background-size: 320% 100%;
+  background-position: 0% 50%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: showcase-gradient-flow 7s linear infinite;
+
+  filter:
+    drop-shadow(0 0 10px rgba(34, 211, 238, 0.14))
+    drop-shadow(0 0 20px rgba(139, 92, 246, 0.12));
+}
+
+@keyframes showcase-gradient-flow {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 320% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .showcase-gradient-text {
+    animation: none;
+    background-position: 50% 50%;
+  }
+}
+/* ======================================================
+   PROJECTS ANIMATED GRADIENT TEXT
+====================================================== */
+
+.projects-gradient-text {
+  display: inline;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #67e8f9,
+    #60a5fa,
+    #818cf8,
+    #c084fc,
+    #f472b6,
+    #ffffff
+  );
+
+  background-size: 320% 100%;
+  background-position: 0% 50%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: projects-gradient-flow 8s linear
+    infinite;
+}
+
+@keyframes projects-gradient-flow {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 320% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-gradient-text {
+    animation: none;
+    background-position: 50% 50%;
+  }
+}
