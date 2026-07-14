@@ -236,30 +236,33 @@ body {
   }
 }
 
+
 /* services section */
 .services-gradient-text {
-  display: inline-block;
+  display: inline;
 
   background: linear-gradient(
     90deg,
     #ffffff,
     #67e8f9,
     #60a5fa,
-    #8b5cf6,
-    #d946ef,
+    #818cf8,
+    #c084fc,
+    #f472b6,
     #ffffff
   );
 
-  background-size: 300% 100%;
+  background-size: 320% 100%;
+  background-position: 0% 50%;
 
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  animation: services-gradient-flow 7s linear infinite;
+  animation: services-gradient-flow 8s linear infinite;
 
   filter:
-    drop-shadow(0 0 12px rgba(34, 211, 238, 0.14))
+    drop-shadow(0 0 10px rgba(34, 211, 238, 0.14))
     drop-shadow(0 0 20px rgba(139, 92, 246, 0.12));
 }
 
@@ -269,7 +272,7 @@ body {
   }
 
   to {
-    background-position: 300% 50%;
+    background-position: 320% 50%;
   }
 }
 
@@ -279,6 +282,7 @@ body {
     background-position: 50% 50%;
   }
 }
+
 
 /* work experience */
 .work-gradient-text {
@@ -368,48 +372,38 @@ body {
     background-position: 50% 50%;
   }
 }
-/* ======================================================
-   PROJECTS ANIMATED GRADIENT TEXT
-====================================================== */
 
-.projects-gradient-text {
-  display: inline;
-
+/* project section */
+.project-card-gradient {
   background: linear-gradient(
-    90deg,
-    #ffffff,
-    #67e8f9,
-    #60a5fa,
-    #818cf8,
-    #c084fc,
-    #f472b6,
-    #ffffff
+    120deg,
+    rgba(34, 211, 238, 0.8),
+    rgba(59, 130, 246, 0.5),
+    rgba(139, 92, 246, 0.75),
+    rgba(236, 72, 153, 0.55),
+    rgba(34, 211, 238, 0.8)
   );
 
-  background-size: 320% 100%;
-  background-position: 0% 50%;
-
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  animation: projects-gradient-flow 8s linear
-    infinite;
+  background-size: 300% 300%;
+  animation: project-card-gradient-flow 7s ease infinite;
 }
 
-@keyframes projects-gradient-flow {
-  from {
+@keyframes project-card-gradient-flow {
+  0% {
     background-position: 0% 50%;
   }
 
-  to {
-    background-position: 320% 50%;
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .projects-gradient-text {
+  .project-card-gradient {
     animation: none;
-    background-position: 50% 50%;
   }
 }
