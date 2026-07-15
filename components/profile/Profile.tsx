@@ -80,9 +80,9 @@ const galleryItems: GalleryItem[] = [
     title: "Coffee and Deep Work",
     description:
       "A calm workspace, good music, and coffee help me focus deeply while solving technical and creative problems.",
-    image: "/profile-gallery/coffee.jpg",
+    image: "/profile-gallery/profile.png",
     icon: Coffee,
-  },
+  },    
 ];
 
 // ======================================================

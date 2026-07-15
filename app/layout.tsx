@@ -23,6 +23,12 @@ export const metadata: Metadata = {
   title: "Bala Arun Pasala",
   description:
     "Full-Stack Software Engineer portfolio",
+
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -36,7 +42,10 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
+      <body
+        suppressHydrationWarning
+        className="flex min-h-full flex-col"
+      >
         <ThemeProvider>
           <ContactDrawerProvider>
             {children}
