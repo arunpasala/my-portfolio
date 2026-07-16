@@ -8,8 +8,15 @@ export const {
   signOut,
   auth,
 } = NextAuth({
-  providers: [
-    Google,
-    GitHub,
-  ],
+  providers: [Google, GitHub],
+
+  pages: {
+    signIn: "/signin",
+  },
+
+  session: {
+    strategy: "jwt",
+  },
+
+  secret: process.env.AUTH_SECRET,
 });
