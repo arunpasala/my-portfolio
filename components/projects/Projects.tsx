@@ -28,7 +28,7 @@ const projects: Project[] = [
       "Supabase",
     ],
     image: "/projects/circlesave.png",
-    live: "https://your-circlesave-link.vercel.app",
+    live: "https://projectcirclesave-qqtt-arun96666ar-6119s-projects.vercel.app/",
     code:
       "https://github.com/arunpasala/projectcirclesave",
   },
